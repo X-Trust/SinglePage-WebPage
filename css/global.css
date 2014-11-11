@@ -1,0 +1,231 @@
+
+@import url( "http://fonts.googleapis.com/css?family=Comfortaa:300");
+@import url( "http://weloveiconfonts.com/api/?family=entypo");             
+
+/*css reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background: #1f1f1f;
+
+    width: 100%;
+    height: 600%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+p {
+    font-family: Entypo;
+    font-size: 24px;
+}
+
+/* Class for centered content.*/
+.centeredContent{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* set all the headers */
+h1,h2,h3,h4,h5 {
+    color: white;
+    font-family: 'Comfortaa', Helvetica;
+    padding: 0 10px 0 10px;
+}
+
+/* I dont want lists to have a style unless I say so */
+ul {
+    list-style: none;
+}
+
+header {
+  padding: 1em 0 0 .5em;
+  text-align: left;
+  font-size: 1.5em;
+  line-height: 1;
+  border-bottom: 3px solid #333;
+}
+
+/* ********************************/
+/*  NAV STYLING                   */
+/**********************************/
+nav h1 {
+    font-size: 1em;
+}
+
+/* Visited and regular link style */
+nav ul li a, nav ul li a:visited {
+    display: block;
+    padding: .36em .5em;
+    text-decoration: none;
+  
+}
+
+/* Hover for links */
+nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
+    text-align: center;
+    color: #AC121D; 
+    background: #DFAD05;
+}
+
+/* Underlined fields */
+.active {
+    border-bottom: .2em solid #DFAD05;
+}
+
+/* Using @media to override a could of settings */
+@media (min-width: 480px) {
+    nav ul {
+	text-align: left;
+	background: #AC121D; /* Ruby red */
+        /* background: #CB281F; */
+    }
+    
+    nav ul li {
+	display: inline;
+    }
+
+    nav ul li a:link  {
+	display: inline-block;
+    }
+    nav ul li a:link .active{
+	border-bottom: .2em solid #DFAD05;
+    }
+}
+
+/* Settings for footer */
+footer {
+     position:fixed;
+     bottom:0;
+     left:0;
+     right:0;
+}
+
+/* Footer nav list */
+#footer-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+
+#footer-nav ul li {
+    display: inline;
+    font-family: Entypo;
+}
+
+/* Footer nav elements */
+#footer-nav ul li a {
+    
+    text-decoration: none;
+    padding: .6em 1em;
+    border-right: 1px solid #2a2a2a;
+    font-family: Entypo;
+    border-bottom: 0;
+    color: white;
+} 
+
+/* Removes right border from rightmost element */
+#footer-nav ul li:last-child a {border:none;}
+
+#footer-nav ul li a:hover {}
+
+/* Style for blog */
+.blog {
+    margin: 100px auto;
+    width: 800px;
+    padding: 20px 40px 20px 40px;
+}
+
+/* Header1 for blog */
+.blog h1{
+    font-size: 24pt;
+    margin: 10px auto 30px auto;
+    padding: 30px 30px 30px 30px;
+    text-align: left;
+    border-bottom: .2em solid #ffffff; 
+}
+
+.blog h2{
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 5px auto 1px auto;
+    color: #dfa900;
+}
+
+.blog p{
+    font-family: 'Comfortaa', Helvetica;
+    text-align: left;
+    color: white;
+    line-height: 2em;
+    font-size: 1em;
+    padding: 5px 40px 30px 40px;
+}
+
+/* set italics  */
+.blog p i  {
+    font-style: italic;
+}
+
+
+/* Setting up the Misc section */
+.misc {
+    margin: 10px auto;
+    padding: 20px 40px 20px 40px;
+}
+
+/* iframe for videos */
+iframe {
+    align: middle;
+    width: 900px;
+    height: 520px;
+    frameborder: 0;
+}
+
+/*Description of section */
+#miscdesc {
+    margin: 1em auto;
+    font-family: 'Comfortaa';
+    text-align: center;
+    color: white;
+}
+
+#miscdesc p {
+    font-family: 'Comfortaa';
+}
+
+#miscdesc h1{
+    font-size: 4em;
+    margin: 1em auto;
+    text-align: center;
+}
+
+/* Interest list */
+.interests ul li{
+    margin: 2em auto;
+    border-top:1px solid rgba(255,255,255,0.4);    
+}
+ 
+.interests ul li h2{
+    font-family: 'Comfortaa', Helvetica;
+    text-align: left;
+    color: white;
+    line-height: 2em;
+    font-size: 18pt;
+}
+
