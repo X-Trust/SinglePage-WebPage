@@ -17,9 +17,9 @@ summary, time, mark, audio, video {
     vertical-align: baseline;
 }
 
+/* Set body size and background color */
 body {
     background: #1f1f1f;
-
     width: 100%;
     height: 600%;
     top: 0;
@@ -27,8 +27,9 @@ body {
     z-index: -1;
 }
 
+/* Set font size and type for page */
 p {
-    font-family: Entypo;
+    font-family: "Conforta";
     font-size: 24px;
 }
 
@@ -52,6 +53,7 @@ ul {
     list-style: none;
 }
 
+/* give the header a size and shape */
 header {
   padding: 1em 0 0 .5em;
   text-align: left;
@@ -67,7 +69,7 @@ nav h1 {
     font-size: 1em;
 }
 
-/* Visited and regular link style */
+/* visited and regular link style */
 nav ul li a, nav ul li a:visited {
     display: block;
     padding: .36em .5em;
@@ -87,7 +89,7 @@ nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
     border-bottom: .2em solid #DFAD05;
 }
 
-/* Using @media to override a could of settings */
+/* Using @media to override a few settings */
 @media (min-width: 480px) {
     nav ul {
 	text-align: left;
@@ -195,7 +197,7 @@ iframe {
     height: 520px;
 }
 
-/*Description of section */
+/* Description of section */
 #miscdesc {
     margin: 1em auto;
     font-family: 'Comfortaa';
@@ -203,10 +205,12 @@ iframe {
     color: white;
 }
 
+/* Misc description */
 #miscdesc p {
     font-family: 'Comfortaa';
 }
 
+/* Misc header */
 #miscdesc h1{
     font-size: 4em;
     margin: 1em auto;
