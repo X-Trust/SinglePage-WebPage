@@ -1,4 +1,8 @@
+/*
 
+
+
+*/
 @import url( "http://fonts.googleapis.com/css?family=Comfortaa:300");
 @import url( "http://weloveiconfonts.com/api/?family=entypo");             
 
@@ -17,17 +21,22 @@ summary, time, mark, audio, video {
     vertical-align: baseline;
 }
 
-/* Set body size and background color */
+/* Set body size and background color. */
 body {
     background: #1f1f1f;
     width: 100%;
     height: 600%;
     top: 0;
     left: 0;
+    	
+    /* 
+      z-index: -1 will set the background to the very back of the page. This will keep background images from 
+      accidentally covering any content. Form more information refer to http://www.w3schools.com/cssref/pr_pos_z-index.asp. 
+      */
     z-index: -1;
 }
 
-/* Set font size and type for page */
+/* Set font size and type for page. */
 p {
     font-family: "Conforta";
     font-size: 24px;
@@ -41,19 +50,19 @@ p {
     align-items:center;
 }
 
-/* set all the headers */
+/* Set all the headers. */
 h1,h2,h3,h4,h5 {
     color: white;
     font-family: 'Comfortaa', Helvetica;
     padding: 0 10px 0 10px;
 }
 
-/* I dont want lists to have a style unless I say so */
+/* I dont want lists to have a style unless I say so. */
 ul {
     list-style: none;
 }
 
-/* give the header a size and shape */
+/* give the header a size and shape. */
 header {
   padding: 1em 0 0 .5em;
   text-align: left;
@@ -69,7 +78,7 @@ nav h1 {
     font-size: 1em;
 }
 
-/* visited and regular link style */
+/* Visited and regular link styles. */
 nav ul li a, nav ul li a:visited {
     display: block;
     padding: .36em .5em;
@@ -77,19 +86,19 @@ nav ul li a, nav ul li a:visited {
   
 }
 
-/* Hover for links */
+/* Hover for links. */
 nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
     text-align: center;
     color: #AC121D; 
     background: #DFAD05;
 }
 
-/* Underlined fields */
+/* Underlined fields. */
 .active {
     border-bottom: .2em solid #DFAD05;
 }
 
-/* Using @media to override a few settings */
+/* Using @media to override a few settings. */
 @media (min-width: 480px) {
     nav ul {
 	text-align: left;
@@ -109,7 +118,7 @@ nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
     }
 }
 
-/* Settings for footer */
+/* Settings for the footer. */
 footer {
      position:fixed;
      bottom:0;
@@ -117,7 +126,7 @@ footer {
      right:0;
 }
 
-/* Footer nav list */
+/* Footer nav list. */
 #footer-nav ul {
     margin: 0;
     padding: 0;
@@ -131,7 +140,7 @@ footer {
     font-family: Entypo;
 }
 
-/* Footer nav elements */
+/* Footer nav elements. */
 #footer-nav ul li a {
     
     text-decoration: none;
@@ -142,19 +151,19 @@ footer {
     color: white;
 } 
 
-/* Removes right border from rightmost element */
+/* Removes right border from rightmost element. */
 #footer-nav ul li:last-child a {border:none;}
 
 #footer-nav ul li a:hover {}
 
-/* Style for blog */
+/* Style for blog. */
 .blog {
     margin: 100px auto;
     width: 800px;
     padding: 20px 40px 20px 40px;
 }
 
-/* Header1 for blog */
+/* Header1 for blog. */
 .blog h1{
     font-size: 24pt;
     margin: 10px auto 30px auto;
@@ -179,25 +188,25 @@ footer {
     padding: 5px 40px 30px 40px;
 }
 
-/* set italics  */
+/* Set italics.  */
 .blog p i  {
     font-style: italic;
 }
 
 
-/* Setting up the Misc section */
+/* Setting up the Misc section. */
 .misc {
     margin: 10px auto;
     padding: 20px 40px 20px 40px;
 }
 
-/* iframe for videos */
+/* iframe for videos. */
 iframe {
     width: 900px;
     height: 520px;
 }
 
-/* Description of section */
+/* Description of section. */
 #miscdesc {
     margin: 1em auto;
     font-family: 'Comfortaa';
@@ -205,12 +214,12 @@ iframe {
     color: white;
 }
 
-/* Misc description */
+/* Misc description. */
 #miscdesc p {
     font-family: 'Comfortaa';
 }
 
-/* Misc header */
+/* Misc header. */
 #miscdesc h1{
     font-size: 4em;
     margin: 1em auto;
