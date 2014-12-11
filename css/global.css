@@ -63,7 +63,7 @@ h1,h2,h3,h4,h5 {
     padding: 0 10px 0 10px;
 }
 
-/* I dont want lists to have a style unless I say so. */
+/* I don't want lists to have a style unless I say so. */
 ul {
     list-style: none;
 }
